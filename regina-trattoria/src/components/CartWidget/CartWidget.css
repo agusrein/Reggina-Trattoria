@@ -1,0 +1,22 @@
+.div__container--carrito{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.div__container--carrito p{
+    margin-right: 10px;
+    font-weight: 800;
+    background-color: #364911;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #DED8D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrito{
+    width:40px ;
+    height: 40px;
+}
