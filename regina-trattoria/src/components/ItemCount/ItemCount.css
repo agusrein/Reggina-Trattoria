@@ -1,0 +1,10 @@
+.btn__item--count{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{width: 20px; text-align: center;}
+

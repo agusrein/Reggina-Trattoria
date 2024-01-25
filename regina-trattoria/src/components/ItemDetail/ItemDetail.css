@@ -1,0 +1,8 @@
+.div__container--item-detail{
+    background: rgb(151, 230, 248);
+    background: radial-gradient(circle, rgb(68, 214, 247) 41%, rgb(46, 207, 251) 100%);
+}
+
+.img__item-detail{
+    width: 80%;
+}
