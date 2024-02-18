@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZxpVKCG_k76RL3deTUCoqhYu1lhbuuWE",
+  apiKey: import.meta.env.VITE_API_KEY_FIREBASE_CONFIG,
   authDomain: "reggina-trattoria.firebaseapp.com",
   projectId: "reggina-trattoria",
   storageBucket: "reggina-trattoria.appspot.com",
