@@ -14,8 +14,9 @@ const NavBar = () => {
           <NavLink to='/category/1' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Entradas</NavLink>
           <NavLink to='/category/2' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Pizzas</NavLink>
           <NavLink to='/category/3' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Los Principales</NavLink>
-          <NavLink to='/category/4' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Hamburguesas</NavLink>
-          <NavLink className='nav__link text-decoration-none fw-semibold ps-2 pe-2' to='/myorder'><CartWidget/></NavLink>
+          <NavLink to='/category/4' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Sandwiches</NavLink>
+          <NavLink to='/category/5' className='nav__link text-decoration-none fw-semibold ps-2 pe-2 text-center'>Bebidas</NavLink>
+          <NavLink className='nav__link text-decoration-none fw-semibold ps-2 pe-2' to='/cart'><CartWidget/></NavLink>
         </div>
       </nav>
     </>

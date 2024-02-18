@@ -1,0 +1,14 @@
+.div__container--CartItem{
+    background-color: aliceblue;
+}
+
+.div__dividier{
+    height: 2px;
+    background-color: rgba(61, 59, 59, 0.276);
+}
+
+.btn__delete{
+    background-color: rgba(203, 25, 25, 0.84);
+    height: 30px;
+    border: none;
+}

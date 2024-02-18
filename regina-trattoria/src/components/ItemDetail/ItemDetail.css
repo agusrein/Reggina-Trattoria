@@ -1,8 +1,25 @@
 .div__container--item-detail{
     background: rgb(151, 230, 248);
     background: radial-gradient(circle, rgb(68, 214, 247) 41%, rgb(46, 207, 251) 100%);
+    transition: 0.5s;
+    cursor: pointer;
 }
-
+.div__container--item-detail:hover{transform: scale(1.025);}
 .img__item-detail{
     width: 80%;
 }
+
+.button__detail--close{
+    width: 30px;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+
+.button__detail--close:hover {
+    background-color: black;
+    color:white;
+}
+.button__detail--close:active {
+    background-color: rgb(189, 42, 42);
+}
+

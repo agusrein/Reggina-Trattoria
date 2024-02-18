@@ -1,0 +1,6 @@
+.anchor__cart{color: black;transition: 0.5s;}
+
+.anchor__cart:hover{
+ transform: scale(1.05);
+}
+
