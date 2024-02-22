@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-// import { useParams } from 'react-router-dom';
 import { dataBase } from '../../services/config';
 import {getDoc, doc} from 'firebase/firestore';
 
@@ -9,7 +8,6 @@ import {getDoc, doc} from 'firebase/firestore';
 const ItemDetailContainer = ({index}) => {
 
 const [productDetail,setProductDetail] = useState('');
-// const {idItem} = useParams();
 const idItem = index;
 
 useEffect(()=>{

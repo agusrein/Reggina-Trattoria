@@ -2,7 +2,7 @@ input{
     height: 35px;
     background-color: rgba(218, 214, 214, 0.749);
     cursor: pointer;
-    border: 1.5px solid rgb(50, 109, 73);
+    border: 1px solid rgb(68, 157, 102);
     padding-left: 10px;
     transition: 0.3s;
     outline: none;
@@ -14,8 +14,23 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
     -webkit-appearance: none;
     margin: 0;
 }
-.btn__order{height: 35px; background-color: rgb(68, 158, 103); transition: 0.3s; outline: none; border: none; }
-.btn__order:hover{color: white;
-background-color: rgb(57, 126, 84); font-weight: 600;}
+.btn__order{height: 35px; background-color: rgb(68, 157, 102); transition: 0.3s; outline: none; border: none; }
+.btn__order:hover{
+background-color: rgb(79, 182, 119);}
 
 .form__error{ color: rgb(197, 12, 12);}
+
+form{
+    background-color: #ded8d0;
+    
+}
+
+.div__container--cart-checkout{
+    background-color: rgba(220, 220, 220, 0.881);
+
+}
+
+tr{
+    border-bottom: 1px solid rgb(68, 157, 102);
+}
+tr:last-child{border:none;}

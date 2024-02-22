@@ -1,6 +1,37 @@
-.anchor__cart{color: black;transition: 0.5s;}
+.anchor__cart{color: black;transition: 0.5s;  overflow: hidden;}
 
 .anchor__cart:hover{
  transform: scale(1.05);
 }
 
+.div__container--img-message{
+    position: relative;
+    padding-top: 40px;
+}
+
+.div__container--img-message img{
+    position: absolute; 
+    z-index: -1; 
+    left: 29%;
+    top: -120px;
+}
+
+.btn__empty-cart{
+    height: 35px;
+    border:none;
+    background-color: rgb(188, 191, 192);
+}
+
+.btn__empty-cart:hover{
+    background-color: rgb(195, 197, 197);
+}
+
+.btn__close-order{
+    background-color: rgb(68, 214, 247);
+    height: 35px;
+    border: none;
+}
+
+.btn__close-order:hover{
+    background-color: rgb(90, 219, 248);
+}

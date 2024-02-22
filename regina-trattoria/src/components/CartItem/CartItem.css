@@ -1,5 +1,5 @@
 .div__container--CartItem{
-    background-color: aliceblue;
+    background-color: rgba(220, 220, 220, 0.881);
 }
 
 .div__dividier{
@@ -11,4 +11,10 @@
     background-color: rgba(203, 25, 25, 0.84);
     height: 30px;
     border: none;
+    transition: 0.3s;
+}
+
+.btn__delete:hover{
+    background-color:  rgba(223, 30, 30, 0.84);
+    transform: scale(1.03);
 }

@@ -4,7 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ded8d0;
+    border: 1px solid black;
 }
-
+.btn__item--order{
+    font-size: 15px;
+    height: 30px;
+    color: black;
+    background-color: rgb(56, 167, 109);
+}
+.btn__item--order:hover{
+    background-color: rgb(61, 184, 120);
+}
 span{width: 20px; text-align: center;}
 

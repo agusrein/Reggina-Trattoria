@@ -31,15 +31,15 @@ const ItemCount = ({ stock, functionAdd }) => {
         <>  
         <div className='d-flex flex-column'>
             <div className='d-flex'>
-                <button className='m-0 fw-bold p-1 btn__item--count rounded-circle shadow-sm' onClick={increment}>+</button>
+                <button className='m-0 fw-bold p-1 btn__item--count rounded-2 shadow-sm' onClick={increment}>+</button>
                 { renderCount && (<span className='p-0 m-0'>{count}</span>)}
                 { renderCount && (
-                    <button className='m-0 fw-bold p-1 btn__item--count rounded-circle shadow-sm' onClick={decrement}>-</button>
+                    <button className='m-0 fw-bold p-1 btn__item--count rounded-2 shadow-sm' onClick={decrement}>-</button>
                 )}
 
             </div>
             <div>
-                { renderCount && (<button className='' onClick={() => {functionAdd(count); functionSet();}}>Ordenar</button>)}
+                { renderCount && (<button className='d-flex align-items-center btn__item--order btn mt-2' onClick={() => {functionAdd(count); functionSet();}}>Ordenar</button>)}
             </div>
             </div>
         </>

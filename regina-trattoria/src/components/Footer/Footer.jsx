@@ -5,7 +5,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='mt-5 mb-0 pt-4'>
+        <div className='mt-5 mb-0 pt-5'>
            <footer className='pt-3 d-flex align-items-center mt-5 mb-0'>
             <div className='col-3 text-center'>
                 <img className='img__camarero mb-0 pb-0' src='../img/camarero.png'></img>

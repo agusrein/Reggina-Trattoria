@@ -4,3 +4,10 @@
     padding: 0;
 }
 
+body{background-image: url(../public/img/fondo.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;}
