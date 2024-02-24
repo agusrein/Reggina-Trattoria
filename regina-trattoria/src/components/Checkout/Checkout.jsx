@@ -5,6 +5,7 @@ import { dataBase } from '../../services/config';
 import { addDoc, collection } from 'firebase/firestore'
 import './Checkout.css'
 import { Link } from 'react-router-dom';
+import PopUp from '../PopUp/PopUp';
 
 const Checkout = () => {
   const { cart, emptyCart, total } = useContext(CartContext);
@@ -58,31 +59,31 @@ const Checkout = () => {
   return (
     <>
       <div className='d-flex align-items-center mb-5 mt-4 flex-column col-12'>
-        { cart.length > 0 && (
-        <div className=' p-3 div__container--cart-checkout col-xxl-6 col-xl-6 col-lg-6 rounded-2 shadow-sm'>
-          <h5 className='text-center mt-2 mb-2 pt-1'>Resumen de compra</h5>
+        {cart.length > 0 && (
+          <div className=' p-3 div__container--cart-checkout col-xxl-6 col-xl-6 col-lg-6 rounded-2 shadow-sm'>
+            <h5 className='text-center mt-2 mb-2 pt-1'>Resumen de compra</h5>
 
-        <table className='w-100 table__container--cart-checkout mt-4 mb-4'>
-          <tbody className='w-100'>
-            <tr>
-              <td className='col-2 fw-normal ps-3 fw-semibold pb-1'>Cantidad</td>
-              <td className='col-7 fw-normal ps-3 fw-semibold pb-1'>Detalle</td>
-              <td className='col-3 fw-normal text-center fw-semibold pb-1'>Precio</td>
-            </tr>
+            <table className='w-100 table__container--cart-checkout mt-4 mb-4'>
+              <tbody className='w-100'>
+                <tr>
+                  <td className='col-2 fw-normal ps-3 fw-semibold pb-1'>Cantidad</td>
+                  <td className='col-7 fw-normal ps-3 fw-semibold pb-1'>Detalle</td>
+                  <td className='col-3 fw-normal text-center fw-semibold pb-1'>Precio</td>
+                </tr>
 
-            {cart.map(prod => (
-            <tr  className='' key={prod.item.index}>
-              <td className='col-2 ps-3 pt-1 pb-1'>{prod.count} </td>
-              <td className='col-7 ps-3 pt-1 pb-1'>{prod.item.title}</td>
-              <td className='col-3 text-center pt-1 pb-1'>$ {prod.item.price}</td>
-            </tr> ))}
+                {cart.map(prod => (
+                  <tr className='' key={prod.item.index}>
+                    <td className='col-2 ps-3 pt-1 pb-1'>{prod.count} </td>
+                    <td className='col-7 ps-3 pt-1 pb-1'>{prod.item.title}</td>
+                    <td className='col-3 text-center pt-1 pb-1'>$ {prod.item.price}</td>
+                  </tr>))}
 
-          </tbody>
-        </table>
-        <Link className='text-decoration-none' to="../cart"><p className='text-center mt-2 mb-2'>¿Deseas modificar tu compra?</p></Link>
-        </div>
+              </tbody>
+            </table>
+            <Link className='text-decoration-none' to="../cart"><p className='text-center mt-2 mb-2'>¿Deseas modificar tu compra?</p></Link>
+          </div>
         )}
-        
+
         <form className='d-flex flex-column align-items-center col-5 mt-5 pb-3 pt-3 rounded-2 shadow-sm' onSubmit={submitHandler}>
           <h3 className='mt-5 mb-2'>Estas a un Paso de Finalizar tu Pedido!</h3>
           <p className='text-center mb-4'>Completa el siguiente formulario</p>
@@ -102,14 +103,11 @@ const Checkout = () => {
             </div>
             <img src="../img/icon-rute-not-found.png" alt="Imagen de icono" className='div__container--img-not-found col-4 img-fluid ' />
           </div>
-          {
-            orderId && <p className='mt-5 fw-semibold'>GRACIAS POR SU COMPRA SU NRO DE ORDEN : {orderId}</p>
-          }
-
-
         </form>
-
       </div>
+      {
+          orderId && <PopUp code={orderId}/> 
+           }
     </>
   )
 }

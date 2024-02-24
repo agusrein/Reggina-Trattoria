@@ -1,6 +1,6 @@
 input{
     height: 35px;
-    background-color: rgba(218, 214, 214, 0.749);
+    background-color: rgba(234, 230, 230, 0.881);
     cursor: pointer;
     border: 1px solid rgb(68, 157, 102);
     padding-left: 10px;
@@ -26,7 +26,7 @@ form{
 }
 
 .div__container--cart-checkout{
-    background-color: rgba(220, 220, 220, 0.881);
+    background-color: rgba(234, 230, 230, 0.881);
 
 }
 
@@ -34,3 +34,4 @@ tr{
     border-bottom: 1px solid rgb(68, 157, 102);
 }
 tr:last-child{border:none;}
+

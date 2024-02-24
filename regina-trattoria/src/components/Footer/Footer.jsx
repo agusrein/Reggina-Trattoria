@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -13,8 +15,8 @@ const Footer = () => {
             <h6 className='col-6 text-center fw-normal'>Reggina Trattoria | © 2023 Company, Inc</h6>
             <div className='col-3'>
                 
-               <i className='p-2'>icono</i> 
-               <i className='p-2'>icono</i> 
+                <FontAwesomeIcon icon={faTwitter} className='m-3 fs-2'/>
+                <FontAwesomeIcon icon={faInstagram} className='m-3 fs-2'/>
             </div>
            </footer>
         </div>

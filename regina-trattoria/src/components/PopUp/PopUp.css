@@ -1,0 +1,33 @@
+.div__container--popUp{
+    background-color: rgba(0, 0, 0, 0.434);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:100vh !important;
+    width: 100vw;
+    z-index: 5;
+}
+
+.div__container--order-success{
+    background: rgb(151, 230, 248);
+    background: radial-gradient(circle, rgb(68, 214, 247) 41%, rgb(46, 207, 251) 100%);
+    height: 370px;
+    margin-top: 80px;
+}
+
+
+.img__order--succes{
+    width: 380px;
+    transform: translate(0,40px);
+    z-index: 1;
+}
+
+.div__dividier{
+    height: 3px;
+    background-color: rgba(13, 4, 4, 0.904);
+    transform: translate(0,-30px);
+}
+
+.div__container--order-number{
+  transform: translate(0,30px);
+}

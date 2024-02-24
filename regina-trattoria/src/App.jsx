@@ -9,10 +9,6 @@ import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 
-
-
-
-
 const App = () => {
 
   return (
