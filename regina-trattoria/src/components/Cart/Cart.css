@@ -1,19 +1,33 @@
+
 .anchor__cart{color: black;transition: 0.5s;  overflow: hidden;}
 
 .anchor__cart:hover{
  transform: scale(1.05);
 }
-
 .div__container--img-message{
-    position: relative;
-    padding-top: 40px;
+    min-height: 80vh;
 }
 
-.div__container--img-message img{
-    position: absolute; 
-    z-index: -1; 
-    left: 29%;
-    top: -120px;
+.div__container--img{
+    background-image: url(../public/img/icon-message.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.anchor__cart{
+    font-size: 18px !important;
+    align-self: center;
+    padding-right: 130px;
+}
+.div__container--img-message h2{
+    font-size: 22px !important;
+    align-self: center;
+    padding-right: 130px;
 }
 
 .btn__empty-cart{
@@ -34,4 +48,16 @@
 
 .btn__close-order:hover{
     background-color: rgb(90, 219, 248);
+}
+
+@media screen and (max-width: 515px) and (min-width: 350px){
+    .anchor__cart{
+        font-size: 14px !important;
+        padding-right: 110px;
+    }
+    .div__container--img-message h2{
+        font-size: 16px !important;
+        padding-right: 110px;
+        
+    }
 }

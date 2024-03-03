@@ -3,3 +3,27 @@
 .div__container--item:hover{scale: 1.025;}
 .div__item--border{ border: 2px solid #ded8d0;}
 .div__container--item-img{height: 100%;}
+
+
+@media screen and (max-width: 600px) and (min-width: 350px) {
+
+    .div__container--item{
+        height: 130px;
+    }
+    .div__container--item p{
+        font-size: 14px;
+    }
+
+    .btn__item--details{
+        height: 25px;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       font-size: 13px;
+    }
+
+    .div__container--p-quantity{
+        font-size: 12px !important;
+    }
+}

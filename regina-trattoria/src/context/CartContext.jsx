@@ -11,9 +11,7 @@ export const CartProvider = ({ children }) => {
     const [total, setTotal] = useState(0);
     const [totalQuantity, setTotalQuantity] = useState(0);
     const [view, setView] = useState(0);
-    console.log(cart);
-    console.log(total);
-    console.log(totalQuantity);
+
 
 
 

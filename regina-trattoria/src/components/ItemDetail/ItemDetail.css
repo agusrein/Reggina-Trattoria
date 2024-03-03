@@ -5,14 +5,17 @@
     cursor: pointer;
 }
 .div__container--item-detail:hover{transform: scale(1.025);}
-.img__item-detail{
-    width: 80%;
-}
 
 .button__detail--close{
+    height: 30px;
     width: 30px;
+    background-color: #ded8d0;
     border: 1px solid black;
     transition: 0.2s;
+}
+
+.button__detail--close svg{
+    font-size: 13px;
 }
 
 .button__detail--close:hover {
@@ -23,3 +26,30 @@
     background-color: rgb(189, 42, 42);
 }
 
+@media screen and (max-width: 600px) and (min-width: 350px) {
+    .div__container--item-detail{
+        height: auto;
+    }
+
+    .img__item-detail{
+        height:160px;
+    }
+
+    .div__container--item-detail p{
+        font-size: 14px;
+    }
+
+    .button__detail--close{
+        width: 25px;
+        height: 25px;
+    }
+
+    .button__detail--close svg {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .img__item-detail{
+        margin-top: 20px;
+    }
+}

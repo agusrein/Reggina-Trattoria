@@ -1,9 +1,9 @@
-.div__container--carrito{
+.div__container--cart{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
-.div__container--carrito p{
+/* .div__container--carrito p{
     font-weight: 800;
     background-color: #393937;
     border-radius: 50%;
@@ -13,4 +13,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.div__container--cart-heart{
+    position: relative;
+     display: inline-block;
+}
+.div__container--cart-heart svg{
+    font-size: 25px;
+    color: rgb(237, 35, 35);
+}
+.div__container--cart-heart span{
+    position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-Size: 15px; 
+          font-weight: 600;
+          color: rgb(245, 239, 239); 
 }

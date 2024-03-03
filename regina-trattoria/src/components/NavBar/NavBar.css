@@ -10,5 +10,11 @@
 
 .nav__link{
     color: rgb(36, 63, 38);
+    transition: 0.5s;
     
+}
+
+.nav__link:hover{
+    transform: translate(0px,-6px);
+
 }

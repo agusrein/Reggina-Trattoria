@@ -6,6 +6,8 @@ import { addDoc, collection } from 'firebase/firestore'
 import './Checkout.css'
 import { Link } from 'react-router-dom';
 import PopUp from '../PopUp/PopUp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWrench } from '@fortawesome/free-solid-svg-icons';
 
 const Checkout = () => {
   const { cart, emptyCart, total } = useContext(CartContext);
@@ -60,7 +62,7 @@ const Checkout = () => {
     <>
       <div className='d-flex align-items-center mb-5 mt-4 flex-column col-12'>
         {cart.length > 0 && (
-          <div className=' p-3 div__container--cart-checkout col-xxl-6 col-xl-6 col-lg-6 rounded-2 shadow-sm'>
+          <div className=' p-3 div__container--cart-checkout col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-11 rounded-2 shadow-sm'>
             <h5 className='text-center mt-2 mb-2 pt-1'>Resumen de compra</h5>
 
             <table className='w-100 table__container--cart-checkout mt-4 mb-4'>
@@ -80,12 +82,12 @@ const Checkout = () => {
 
               </tbody>
             </table>
-            <Link className='text-decoration-none' to="../cart"><p className='text-center mt-2 mb-2'>¿Deseas modificar tu compra?</p></Link>
+            <Link className='text-decoration-none' to="../cart"><p className='text-center mt-2 mb-2'>¿Deseas modificar tu compra? <FontAwesomeIcon className='pe-2 ps-2' icon={faWrench} /></p></Link>
           </div>
         )}
 
-        <form className='d-flex flex-column align-items-center col-5 mt-5 pb-3 pt-3 rounded-2 shadow-sm' onSubmit={submitHandler}>
-          <h3 className='mt-5 mb-2'>Estas a un Paso de Finalizar tu Pedido!</h3>
+        <form className='d-flex flex-column align-items-center col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10 col-11 mt-5 pb-3 pt-3 rounded-2 shadow-sm' onSubmit={submitHandler}>
+          <h3 className='mt-5 mb-2 ps-2 pe-2 text-center'>Estas a un Paso de Finalizar tu Pedido!</h3>
           <p className='text-center mb-4'>Completa el siguiente formulario</p>
           <div className='d-flex col-11 justify-content-between'>
             <input className='shadow-sm rounded-2 me-1 w-100' type="text" onKeyDown={() => setError('')} placeholder='Ingrese Nombre' onChange={(e) => setName(e.target.value)} />
@@ -106,8 +108,8 @@ const Checkout = () => {
         </form>
       </div>
       {
-          orderId && <PopUp code={orderId}/> 
-           }
+        orderId && <PopUp code={orderId} />
+      }
     </>
   )
 }
